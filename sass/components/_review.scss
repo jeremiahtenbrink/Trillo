@@ -1,0 +1,67 @@
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium){
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    margin-bottom: 1.4rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--border-bottom-light-grey);
+    z-index: 1;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-smallest){
+      justify-content: center;
+    }
+
+  }
+
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 4rem;
+  }
+
+  &__user-box {
+    margin-right: 3rem;
+  }
+
+  &__user-name {
+    text-transform: uppercase;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__user-date {
+
+  }
+
+  &__rating {
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  &::before {
+    font-size: 15rem;
+    font-family: sans-serif;
+    content: "\201C";
+    position: absolute;
+    top: -4.4rem;
+    left: 0;
+    color: var(--color-grey-light-3);
+
+  }
+}

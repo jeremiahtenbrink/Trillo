@@ -4,6 +4,7 @@
 
 
 @import "base/base";
+@import "base/animations";
 
 @import "layout/layout";
 
@@ -12,4 +13,12 @@
 @import "components/search";
 @import "components/user-navigation";
 @import "components/side-navigation";
+@import "components/gallery";
+@import "components/overview";
+@import "components/btn-inline";
+@import "components/paragraph";
+@import "components/list";
+@import "components/recommend";
+@import "components/review";
+@import "components/cta";
 
